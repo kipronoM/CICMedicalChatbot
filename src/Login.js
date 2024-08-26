@@ -23,19 +23,25 @@ const Login = () => {
         <h2>Login</h2>
         <div className="input-group">
           <label>Username</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+          <div className="input-container">
+            <i className="fas fa-user"></i>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
         </div>
         <div className="input-group">
           <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="input-container">
+            <i className="fas fa-lock"></i>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
         </div>
         <button type="submit">Login</button>
       </form>

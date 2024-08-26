@@ -1,45 +1,105 @@
 .dashboard-container {
-    padding: 2rem;
-  }
-  
-  .summary-tiles {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-  }
-  
-  .tile {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-    margin: 0 1rem;
-  }
-  
-  .charts {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-  }
-  
-  .chart {
-    background-color: #f0f0f0;
-    padding: 2rem;
-    border-radius: 8px;
-    flex: 1;
-    margin: 0 1rem;
-    text-align: center;
-  }
-  
-  .users-chats-list {
-    text-align: left;
-  }
-  
-  .list {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a, .navbar ul li button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover, .navbar ul li button:hover {
+  background-color: #111;
+}
+
+.content {
+  margin-top: 60px; /* Adjusted to account for navbar height */
+}
+
+.dashboard-title {
+  color: burgundy;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.chart {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  width: 30%;
+}
+
+.chart h3 {
+  color: burgundy;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.table-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.table-container h3 {
+  color: burgundy;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.queue-icon {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: burgundy;
+}
