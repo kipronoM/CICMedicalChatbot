@@ -68,6 +68,7 @@ const Dashboard = ({ onLogout }) => {
     { id: 1, name: 'John Doe', status: 'Active' },
     { id: 2, name: 'Jane Smith', status: 'Active' },
     { id: 3, name: 'Sam Wilson', status: 'Inactive' },
+    { id: 4, name: 'Lisa Brown', status: 'Active' },    
     { id: 4, name: 'Lisa Brown', status: 'Active' },
   ];
 
